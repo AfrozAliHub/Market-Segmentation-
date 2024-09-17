@@ -54,7 +54,7 @@ with st.form("my_form"):
     credit_limit = st.number_input('Credit Limit', step=0.1, format="%.1f", min_value=0.0, max_value=1000000.0, help="Maximum credit limit on the account.")
     payments = st.number_input('Payments', step=0.01, format="%.6f", min_value=0.0, max_value=50000.0, help="Total amount of payments made on the account.")
     minimum_payments = st.number_input('Minimum Payments', step=0.01, format="%.6f", min_value=0.0, max_value=10000.0, help="Minimum payments made on the account.")
-    prc_full_payment = st.number_input('PRC Full Payment', step=0.01, format="%.6f", min_value=0.0, max_value=10000, help="Percentage of full payments made (0 to 1 scale).")
+    prc_full_payment = st.number_input('PRC Full Payment', step=0.01, format="%.6f", min_value=0.0, max_value=1.0000, help="Percentage of full payments made (0 to 1 scale).")
     tenure = st.number_input('Tenure', step=1, min_value=0, max_value=120, help="Number of months the account has been active.")
 
 
